@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="board" class="board"></div>
+
+    <div class="vl"></div>
+
+    <div class="info">
+        <div class="options">
+
+            <span style="color: blueviolet;"> Search depth: </span>
+            <select id="search-depth">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+            <span>Positions evaluated : <span class="output" id="positsion-count"></span></span>
+            <br>
+            <span>Time : <span class="output" id="time"></span></span>
+            <br>
+            <span>Positions/s : <span class="output" id="positions-per-s"></span> </span>
+            <br>
+            <br>
+            <!-- <hr style="width: 100%;"> -->
+        </div>
+
+
+        <div id="move-history" class="move-history">
+
+            <span style="font-size: 90px; color: blueviolet; margin-left: 100px">Moves</span>
+        </div>
+
+    </div>
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/chess.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
